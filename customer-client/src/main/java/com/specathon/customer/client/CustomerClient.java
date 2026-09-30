@@ -1,0 +1,2 @@
+package com.specathon.customer.client;
+public class CustomerClient { private final String baseUrl; public CustomerClient(String baseUrl){this.baseUrl=baseUrl;} public String getCustomerUrl(Long id){return baseUrl+"/customers/"+id;} }
