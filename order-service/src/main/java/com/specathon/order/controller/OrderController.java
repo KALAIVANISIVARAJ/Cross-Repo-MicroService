@@ -1,0 +1,3 @@
+package com.specathon.order.controller;
+import com.specathon.order.service.OrderService; import org.springframework.web.bind.annotation.*;
+@RestController @RequestMapping("/orders") public class OrderController { private final OrderService service; public OrderController(OrderService service){this.service=service;} @PostMapping public String create(@RequestParam Long customerId){return service.createOrder(customerId);} }
