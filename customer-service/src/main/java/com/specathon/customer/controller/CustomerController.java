@@ -1,0 +1,3 @@
+package com.specathon.customer.controller;
+import com.specathon.customer.model.Customer; import com.specathon.customer.service.CustomerService; import org.springframework.web.bind.annotation.*;
+@RestController @RequestMapping("/customers") public class CustomerController { private final CustomerService service; public CustomerController(CustomerService service){this.service=service;} @GetMapping("/{id}") public Customer getCustomer(@PathVariable Long id){return service.getCustomer(id);} }
