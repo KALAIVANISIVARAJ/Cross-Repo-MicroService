@@ -1,0 +1,11 @@
+services:
+  customer-service:
+    repository: customer-service
+    artifacts:
+      - com.specathon:customer-client
+  order-service:
+    repository: order-service
+    artifacts:
+      - com.specathon:order-client
+  payment-service:
+    repository: payment-service
