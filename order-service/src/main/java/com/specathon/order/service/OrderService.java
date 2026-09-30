@@ -1,0 +1,3 @@
+package com.specathon.order.service;
+import com.specathon.customer.client.CustomerClient; import org.springframework.stereotype.Service;
+@Service public class OrderService { private final CustomerClient customerClient; public OrderService(CustomerClient customerClient){this.customerClient=customerClient;} public String createOrder(Long customerId){ return "Customer URL: "+customerClient.getCustomerUrl(customerId); } }
