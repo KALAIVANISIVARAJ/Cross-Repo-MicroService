@@ -1,0 +1,3 @@
+package com.specathon.customer.service;
+import com.specathon.customer.model.Customer; import com.specathon.customer.repository.CustomerRepository; import org.springframework.stereotype.Service;
+@Service public class CustomerService { private final CustomerRepository repository; public CustomerService(CustomerRepository repository){this.repository=repository;} public Customer getCustomer(Long id){return repository.findOne(id);} }
