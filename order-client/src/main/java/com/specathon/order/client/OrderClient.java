@@ -1,0 +1,2 @@
+package com.specathon.order.client;
+public class OrderClient { private final String baseUrl; public OrderClient(String baseUrl){this.baseUrl=baseUrl;} public String getOrderUrl(Long id){return baseUrl+"/orders/"+id;} }
